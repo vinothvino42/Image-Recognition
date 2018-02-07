@@ -26,73 +26,70 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fe4-ls-2eZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2X-rU-wJt" customClass="RoundedShadowView" customModule="Image_Recognition" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="30" width="335" height="60"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Quh-2r-Eao">
-                                                <rect key="frame" x="8" y="8" width="319" height="44"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="The names of item captured will appear here." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q1B-hB-Z5B">
-                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="30"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                                        <color key="textColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIDENCE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGJ-vN-UFn">
-                                                        <rect key="frame" x="0.0" y="30" width="319" height="14"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="Quh-2r-Eao" secondAttribute="bottom" constant="8" id="2HF-Zc-1Fg"/>
-                                            <constraint firstItem="Quh-2r-Eao" firstAttribute="leading" secondItem="W2X-rU-wJt" secondAttribute="leading" constant="8" id="9cn-90-d9D"/>
-                                            <constraint firstItem="Quh-2r-Eao" firstAttribute="top" secondItem="W2X-rU-wJt" secondAttribute="top" constant="8" id="LlG-nz-65g"/>
-                                            <constraint firstAttribute="height" constant="60" id="NCC-Pf-hC6"/>
-                                            <constraint firstAttribute="trailing" secondItem="Quh-2r-Eao" secondAttribute="trailing" constant="8" id="PB4-yb-udq"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPG-og-Xaj" customClass="RoundedShadowBtn" customModule="Image_Recognition" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="618" width="85" height="29"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="85" id="eH0-qf-J5I"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                        <state key="normal" title="FLASH OFF">
-                                            <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wd6-8u-3lp" customClass="RoundedShadowImageView" customModule="Image_Recognition" customModuleProvider="target">
-                                        <rect key="frame" x="280" y="519" width="75" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="PLX-IC-sIB"/>
-                                            <constraint firstAttribute="width" constant="75" id="VwK-Co-lwQ"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.58662425870000001" blue="0.59781640520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2X-rU-wJt" customClass="RoundedShadowView" customModule="Image_Recognition" customModuleProvider="target">
+                                <rect key="frame" x="20" y="30" width="335" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Quh-2r-Eao">
+                                        <rect key="frame" x="8" y="8" width="319" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="The names of item captured will appear here." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q1B-hB-Z5B">
+                                                <rect key="frame" x="0.0" y="0.0" width="319" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIDENCE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGJ-vN-UFn">
+                                                <rect key="frame" x="0.0" y="30" width="319" height="14"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="wd6-8u-3lp" secondAttribute="trailing" constant="20" id="Ixb-Xo-mbZ"/>
-                                    <constraint firstItem="lPG-og-Xaj" firstAttribute="leading" secondItem="fe4-ls-2eZ" secondAttribute="leading" constant="20" id="LlB-fj-DH7"/>
-                                    <constraint firstAttribute="trailing" secondItem="W2X-rU-wJt" secondAttribute="trailing" constant="20" id="Sd3-yl-X1M"/>
-                                    <constraint firstAttribute="bottom" secondItem="wd6-8u-3lp" secondAttribute="bottom" constant="20" id="UyZ-BS-ZLq"/>
-                                    <constraint firstAttribute="bottom" secondItem="lPG-og-Xaj" secondAttribute="bottom" constant="20" id="ghY-yN-IXa"/>
-                                    <constraint firstItem="W2X-rU-wJt" firstAttribute="top" secondItem="fe4-ls-2eZ" secondAttribute="top" constant="30" id="npa-sm-7cM"/>
-                                    <constraint firstItem="W2X-rU-wJt" firstAttribute="leading" secondItem="fe4-ls-2eZ" secondAttribute="leading" constant="20" id="yBN-LH-rNM"/>
+                                    <constraint firstAttribute="bottom" secondItem="Quh-2r-Eao" secondAttribute="bottom" constant="8" id="2HF-Zc-1Fg"/>
+                                    <constraint firstItem="Quh-2r-Eao" firstAttribute="leading" secondItem="W2X-rU-wJt" secondAttribute="leading" constant="8" id="9cn-90-d9D"/>
+                                    <constraint firstItem="Quh-2r-Eao" firstAttribute="top" secondItem="W2X-rU-wJt" secondAttribute="top" constant="8" id="LlG-nz-65g"/>
+                                    <constraint firstAttribute="height" constant="60" id="NCC-Pf-hC6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Quh-2r-Eao" secondAttribute="trailing" constant="8" id="PB4-yb-udq"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wd6-8u-3lp" customClass="RoundedShadowImageView" customModule="Image_Recognition" customModuleProvider="target">
+                                <rect key="frame" x="280" y="519" width="75" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="PLX-IC-sIB"/>
+                                    <constraint firstAttribute="width" constant="75" id="VwK-Co-lwQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPG-og-Xaj" customClass="RoundedShadowBtn" customModule="Image_Recognition" customModuleProvider="target">
+                                <rect key="frame" x="20" y="618" width="100" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="XQl-4y-0l0"/>
+                                    <constraint firstAttribute="width" constant="100" id="eH0-qf-J5I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="FLASH OFF">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W2X-rU-wJt" secondAttribute="trailing" constant="20" id="3jG-Xg-Koz"/>
                             <constraint firstItem="fe4-ls-2eZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4PN-MN-4xW"/>
+                            <constraint firstItem="W2X-rU-wJt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="GtH-Iq-25u"/>
                             <constraint firstItem="fe4-ls-2eZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hoi-PU-872"/>
                             <constraint firstItem="fe4-ls-2eZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KaR-xv-yxS"/>
+                            <constraint firstItem="W2X-rU-wJt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="V7I-mp-CGC"/>
+                            <constraint firstItem="lPG-og-Xaj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WUd-vz-Gf3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lPG-og-Xaj" secondAttribute="bottom" constant="20" id="iCW-iL-CFP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wd6-8u-3lp" secondAttribute="trailing" constant="20" id="laK-8e-Tyd"/>
+                            <constraint firstAttribute="bottom" secondItem="wd6-8u-3lp" secondAttribute="bottom" constant="20" id="qaP-GR-LkU"/>
                             <constraint firstItem="fe4-ls-2eZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vh4-8e-beq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
