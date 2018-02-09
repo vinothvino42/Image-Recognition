@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D186DCDA202D718900A57C88 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D186DCD9202D718900A57C88 /* SqueezeNet.mlmodel */; };
 		D1A3CB3E202B75E000D81A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A3CB3D202B75E000D81A43 /* AppDelegate.swift */; };
 		D1A3CB40202B75E000D81A43 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A3CB3F202B75E000D81A43 /* CameraVC.swift */; };
 		D1A3CB43202B75E100D81A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A3CB41202B75E100D81A43 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D186DCD9202D718900A57C88 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 		D1A3CB3A202B75E000D81A43 /* Image Recognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Recognition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A3CB3D202B75E000D81A43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A3CB3F202B75E000D81A43 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		D1A3CB51202B766E00D81A43 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D186DCD9202D718900A57C88 /* SqueezeNet.mlmodel */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1A3CB55202B7DB700D81A43 /* RoundedShadowBtn.swift in Sources */,
+				D186DCDA202D718900A57C88 /* SqueezeNet.mlmodel in Sources */,
 				D1A3CB40202B75E000D81A43 /* CameraVC.swift in Sources */,
 				D1A3CB3E202B75E000D81A43 /* AppDelegate.swift in Sources */,
 				D1A3CB53202B7BBF00D81A43 /* RoundedShadowView.swift in Sources */,
