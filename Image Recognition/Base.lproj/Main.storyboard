@@ -58,7 +58,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Quh-2r-Eao" secondAttribute="trailing" constant="8" id="PB4-yb-udq"/>
                                 </constraints>
                             </view>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wd6-8u-3lp" customClass="RoundedShadowImageView" customModule="Image_Recognition" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wd6-8u-3lp" customClass="RoundedShadowImageView" customModule="Image_Recognition" customModuleProvider="target">
                                 <rect key="frame" x="280" y="519" width="75" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="PLX-IC-sIB"/>
