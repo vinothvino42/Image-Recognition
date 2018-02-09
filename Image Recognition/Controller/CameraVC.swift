@@ -11,6 +11,10 @@ import CoreML
 import Vision
 import AVFoundation
 
+enum FlashState {
+    case on
+    case off
+}
 class CameraVC: UIViewController {
 
     var captureSession: AVCaptureSession!
@@ -18,6 +22,7 @@ class CameraVC: UIViewController {
     var previewLayer: AVCaptureVideoPreviewLayer!
     
     var photoData: Data?
+    var flashControlState: FlashState = .off
     
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var captureImageView: RoundedShadowImageView!
@@ -72,13 +77,33 @@ class CameraVC: UIViewController {
     
     @objc func didTapCameraView() {
         let settings = AVCapturePhotoSettings()
-        let previewPixelType = settings.availablePreviewPhotoPixelFormatTypes.first!
-        let previewFormat = [kCVPixelBufferPixelFormatTypeKey as String: previewPixelType, kCVPixelBufferWidthKey as String: 160, kCVPixelBufferHeightKey as String: 160]
+//        let previewPixelType = settings.availablePreviewPhotoPixelFormatTypes.first!
+//        let previewFormat = [kCVPixelBufferPixelFormatTypeKey as String: previewPixelType, kCVPixelBufferWidthKey as String: 160, kCVPixelBufferHeightKey as String: 160]
         
-        settings.previewPhotoFormat = previewFormat
+//        settings.previewPhotoFormat = previewFormat
+        settings.previewPhotoFormat = settings.embeddedThumbnailPhotoFormat
+        
+        if flashControlState == .off {
+            settings.flashMode = .off
+        } else {
+            settings.flashMode = .on
+        }
         cameraOutput.capturePhoto(with: settings, delegate: self)
     }
 
+    @IBAction func flashButtonPressed(_ sender: Any) {
+        
+        switch flashControlState {
+        case .off:
+            flashBtn.setTitle("FLASH  ON", for: .normal)
+            flashControlState = .on
+        case .on:
+            flashBtn.setTitle("FLASH  OFF", for: .normal)
+            flashControlState = .off
+        }
+    }
+    
+    
     func resultsMethod(request: VNRequest, error: Error?) {
         guard let results = request.results as? [VNClassificationObservation] else { return }
         for classification in results {
